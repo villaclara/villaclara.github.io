@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.getElementById("projects");
+    const container = document.getElementById("projectsDiv");
 
     window.projects.forEach(product => {
         const div = document.createElement("div");
