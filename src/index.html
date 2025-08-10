@@ -18,14 +18,14 @@
 <body class="bg-[#151515] text-slate-300 font-sans min-h-screen">
   <div class="flex flex-col md:flex-row md:h-screen">
     <!-- Sidebar -->
-    <aside class="w-full md:w-1/2 flex flex-col justify-between p-6 md:p-10 items-center">
+    <aside class="w-full md:w-1/2 flex flex-col justify-between p-6 md:pt-10 md:pb-1 items-center">
 
-      <div class="max-w-xs w-full md:w-100" style="min-width: 280px;">
+      <div class="max-w-lg w-full md:w-full md:pt-20" style="min-width: 280px;">
         <div class="text-left">
           <h1 class="text-4xl font-bold text-slate-100">Volodymyr Khreptak</h1>
           <h2 class="text-xl mt-2 text-slate-300">.NET developer</h2>
           <p class="mt-4 text-slate-400">
-            I build accessible, pixel-perfect digital experiences for the web.
+            I build desktop and web apps in C# and .NET, mixing clean code with a bit of creative flair.
           </p>
         </div>
 
@@ -37,9 +37,10 @@
           <a href="#projects"
             class="block border-l-2 pl-4 text-slate-500 nav-link border-transparent text-lg transform scale-90 hover:scale-100 hover:text-slate-300 transition duration-200">PROJECTS</a>
         </nav>
-        <div class="mt-10 text-slate-500 w-full text-start">
-          <ul class="flex space-x-5">
-            <li class="hover:text-white">
+
+        <div class="mt-10 md:mt-20 text-sky-300 w-full text-start">
+          <ul class="flex space-x-6">
+            <li class="hover:text-white hover: duration-150 transition transform md:hover:scale-125">
               <a href="https://github.com/villaclara" title="GitHub" target="_blank">
                 <span>
                   <svg viewBox="0 0 100 100" fill="currentColor" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +50,7 @@
                 </span>
               </a>
             </li>
-            <li class="hover:text-white">
+            <li class="hover:text-white hover: duration-150 transition transform md:hover:scale-125">
               <a href="https://www.linkedin.com/in/volodymyr-khreptak-ba89ab182/" title="LinkedIn" target="_blank">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
@@ -60,15 +61,29 @@
                   </svg>
                 </span>
               </a>
+            </li>
+            <li class="hover:text-white hover: duration-150 transition transform md:hover:scale-125">
+              <a href="mailto:volodymyr.khreptak@gmail.com?subject=Hey%20Volodymyr,%20we%20have%20an%20offer%20for%20you!" title="Gmail" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="hover:text-white hover: duration-150 transition transform hover:scale-125">
+              <a href="https://t.me/vtchs" title="Telegram" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+              </a>
+            </li>
+            
+          </ul>
         </div>
-        </li>
-
-        </ul>
       </div>
       <div>
 
 
-        <footer>This website was highly inspired by a beautiful website of Brittany Chiang <a
+        <footer class="hidden md:block text-sm font-extralight">This website was highly inspired by a beautiful website of Brittany Chiang <a
             href="https://brittanychiang.com" style="color: blue">brittanychiang.com</a></footer>
       </div>
 
@@ -79,55 +94,47 @@
     <main class="w-full md:w-1/2 space-y-20 overflow-y-auto p-6 md:p-10">
       <section id="about" class="space-y-6 first:pt-0">
         <p>
-          I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful
-          design with robust engineering.
-          My favorite work lies at the intersection of design and development, creating experiences that not only look
-          great but are meticulously
-          built for performance and usability.
+          I’m a software engineer who enjoys building all kinds of stuff with C# and the .NET platform. 
         </p>
-        <p>
-          Currently, I'm a Senior Front-End Engineer at
-          <span class="text-slate-100 font-medium">Klaviyo</span>, specializing in accessibility. I contribute to the
-          creation and maintenance of
-          UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best
-          practices to deliver an
-          inclusive user experience.
+        <p>  
+         I’ve worked with WPF for desktop apps, ASP.NET Core for web projects, and EF Core for data management — 
+         plus many other tools that make coding enjoyable and efficient. I enjoy exploring the .NET ecosystem, 
+         from async programming to dependency injection and APIs, to build maintainable solutions. 
+         Most of my projects start as personal ideas or helpful tools for friends, 
+         but I always polish them like professional releases.
         </p>
-        <p>
-          In the past, I've had the opportunity to develop software across a variety of settings — from
-          <span class="text-slate-100 font-medium">advertising agencies</span> and
-          <span class="text-slate-100 font-medium">large corporations</span> to
-          <span class="text-slate-100 font-medium">start-ups</span> and
-          <span class="text-slate-100 font-medium">small digital product studios</span>. Additionally, I also released a
-          <span class="text-slate-100 font-medium">comprehensive video course</span> a few years ago, guiding learners
-          through building a web app
-          with the Spotify API.
-        </p>
-        <p>
-          In my spare time, I’m usually climbing, reading, hanging out with my wife and two cats, or running around
-          Hyrule searching for
-          <span class="text-slate-100 font-medium">Korok seeds</span>.
+        <p>  
+          My significant QA experience helps me spot potential bugs quickly and understand where issues might arise 
+          in the code. For me, coding is a blend of problem-solving, creativity, and fun.
         </p>
 
-        <p>check out full <a href=../public/cv.pdf class="text-blue-400">resume -></a></p>
+        <p>Check out full <a href=../public/cv.pdf class="text-blue-400">resume</a>.</p>
         
         </section>
         
         <section id="experience" class="space-y-4">
           <h2 class="text-2xl font-bold text-slate-100">Experience</h2>
-          <div>
-            <h3 class="text-lg font-semibold text-slate-100">QA - 
-              <a href="https://www.gameloft.com/" target="_blank" rel="noopener noreferrer" title="Gameloft.com">
-                <span class="text-blue-300">Gameloft</span>  
-              </a> 
-              (Dec 2018 - present)</h3>
+          <div class="space-y-2">
+            <h3 class="text-lg font-semibold text-slate-100 flex flex-row">QA - 
+              <a href="https://www.gameloft.com/" class="flex items-center" target="_blank" rel="noopener noreferrer" title="Gameloft.com">
+                <span class="text-blue-300 inline-block">
+                  &nbsp;Gameloft&nbsp;
+                </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="size-4">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                </a>         
+                &nbsp;(Dec 2018 - present)
+              </h3>
             <p class="text-slate-400">
-              UX QA
+              UX QA, QA Lead
             </p>
             <p>
               I’m an experienced QA Specialist who has worked on exciting multi-platform projects like 
               <a href="https://disneydreamlightvalley.com/" target="_blank" rel="noopener noreferrer" title="Disney Dreamlight Valley">
-                <span class="text-blue-300">Disney Dreamlight Valley</span>
+                <span class="text-blue-300 font-bold">Disney Dreamlight Valley</span>
               </a> 
               testing across iOS, macOS, Switch, and PC. I enjoy creating and running thorough test cases, manually exploring
               apps to find bugs, and keeping track of everything using internal tools like CRM. As a QA Lead, I’ve had the
@@ -190,6 +197,9 @@
 
   <script src="../public/info/projects.js"></script>
   <script src="../src/scripts/fetchdata.js"></script>
+
+  <footer class="block md:hidden text-sm text-center font-extralight px-3">This website was highly inspired by a beautiful website of Brittany Chiang <a
+            href="https://brittanychiang.com" style="color: blue">brittanychiang.com</a></footer>
 </body>
 
 </html>
