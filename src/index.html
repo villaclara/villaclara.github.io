@@ -18,7 +18,7 @@
 <body class="bg-[#151515] text-slate-300 font-sans min-h-screen">
   <div class="flex flex-col md:flex-row md:h-screen">
     <!-- Sidebar -->
-    <aside class="w-full md:w-1/2 flex flex-col justify-between p-6 md:pt-10 md:pb-1 items-center">
+    <aside class="w-full md:w-1/2 flex flex-col justify-between p-6 md:pt-10 md:pb-1 md:ps-28">
 
       <div class="max-w-lg w-full md:w-full md:pt-20" style="min-width: 280px;">
         <div class="text-left">
@@ -83,15 +83,15 @@
       <div>
 
 
-        <footer class="hidden md:block text-sm font-extralight">This website was highly inspired by a beautiful website of Brittany Chiang <a
-            href="https://brittanychiang.com" style="color: blue">brittanychiang.com</a></footer>
+        <footer class="hidden md:block text-sm font-extralight text-slate-500">This website was highly inspired by a beautiful website of Brittany Chiang <a
+            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer"><span class="text-sky-700">brittanychiang.com</span></a></footer>
       </div>
 
     </aside>
 
 
     <!-- Main Content -->
-    <main class="w-full md:w-1/2 space-y-20 overflow-y-auto p-6 md:p-10">
+    <main class="w-full md:w-1/2 space-y-20 overflow-y-auto p-6 md:ps-4 md:pe-28">
       <section id="about" class="space-y-6 first:pt-0">
         <p>
           I’m a software engineer who enjoys building all kinds of stuff with C# and the .NET platform. 
@@ -148,12 +148,12 @@
         <h2 class="text-2xl font-bold text-slate-100">Projects</h2>
         <div class="items-start group space-y-5" id="projectsDiv">
 
-          <div>
+          <!-- <div>
             <a href="https://google.com">
               <div
-                class="border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0">
+                class="flex flex-col lg:flex-row space-x-3 border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0 hover:scale-105 transition duration-200 transform">
 
-                <img src="${product.name}" width=200 height=40 class="flex-shrink-0" />
+                <img src="../public/images/ata_reborn.png" width=180 height=40 class="flex-shrink-0" />
                 <div>
                   <h3 class="text-lg font-semibold text-slate-100">Spotify Playlist Builder</h3>
                   <p class="text-slate-400">
@@ -168,7 +168,7 @@
           <div>
             <a href="https://google.com" target="_blank">
               <div
-                class="border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0">
+                class="border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0 hover:scale-105 transition duration-200 transform">
                 <img src="${product.name}" width=200 height=40 class="flex-shrink-0" />
                 <div>
                   <h3 class="text-lg font-semibold text-slate-100">Dev Portfolio Template</h3>
@@ -182,13 +182,13 @@
           </div>
 
           <div
-            class="border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0">
+            class="border border-slate-700 p-4 rounded [&:not(:hover)]:group-hover:opacity-50 hover:bg-gray-800 hover:blur-0 hover:scale-105 transition duration-200 transform">
             <h3 class="text-lg font-semibold text-slate-100">Spotify Playlist Builder</h3>
             <p class="text-slate-400">
               A web app using the Spotify API to create and manage playlists based on mood or genre.
             </p>
             <span class="text-green-400 text-sm">React • Node.js • Spotify API</span>
-          </div>
+          </div> -->
 
         </div>
       </section>
@@ -199,7 +199,7 @@
   <script src="../src/scripts/fetchdata.js"></script>
 
   <footer class="block md:hidden text-sm text-center font-extralight px-3">This website was highly inspired by a beautiful website of Brittany Chiang <a
-            href="https://brittanychiang.com" style="color: blue">brittanychiang.com</a></footer>
+            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer" style="color: blue">brittanychiang.com</a></footer>
 </body>
 
 </html>
