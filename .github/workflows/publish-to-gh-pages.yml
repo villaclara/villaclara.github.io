@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - master   # Change if your default branch is different
-
+      
+permissions:
+  contents: write # We generate static HTML, JS, CSS so we need write access to the repo
+  pages: write
+  id-token: write
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
