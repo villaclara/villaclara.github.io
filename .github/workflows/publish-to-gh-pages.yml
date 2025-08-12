@@ -1,0 +1,45 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+      
+permissions:
+  contents: write # We generate static HTML, JS, CSS so we need write access to the repo
+  pages: write
+  id-token: write
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create dist folder structure
+        run: |
+          mkdir dist
+          cp -r src/* dist/
+          cp -r public dist/public
+
+      - name: Build Tailwind CSS
+        run: npx tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --minify
+        
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
