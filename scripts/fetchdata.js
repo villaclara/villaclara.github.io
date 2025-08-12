@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const imgH = product.img_album_orientation == true ? "h-24" : "h-40";
         let html = `
             <a href="${product.link}" target="_blank">
-                <div class="flex flex-col lg:flex-row space-x-3 border border-slate-900 p-4 rounded-md [&:not(:hover)]:group-hover:opacity-50
-                 hover:bg-gray-800 hover:blur-0 hover:scale-105 transition duration-200 transform">
+                <div class="flex flex-col lg:flex-row gap-3 md:p-4 py-4 rounded-md md:[&:not(:hover)]:group-hover:opacity-50
+                 md:hover:bg-gray-800 md:hover:blur-0 md:hover:scale-105 transition duration-200 transform">
                 <div class="flex items-center">
                     <img src="${product.image}" class="${imgW} ${imgH} flex-shrink-0" />
                 </div>
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         product.tags.forEach(item => 
         {
-            html += `<span class="text-sky-400 bg-slate-900 text-sm font-semibold border-1 border-sky-300 rounded-full px-2">${item}</span>`
+            html += `<span class="self-center text-sky-400 bg-slate-900 text-sm font-semibold border-1 border-sky-300 rounded-full px-2">${item}</span>`
         });
 
         html += `</div>
