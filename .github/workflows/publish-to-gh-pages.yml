@@ -31,6 +31,7 @@ jobs:
           mkdir dist
           cp -r src/scripts dist/scripts
           cp -r public dist/public
+          cp -r src/favicon.ico dist/favicon.ico
 
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --minify
