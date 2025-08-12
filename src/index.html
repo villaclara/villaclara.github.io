@@ -29,7 +29,7 @@
           </p>
         </div>
 
-        <nav class="mt-10 space-y-4">
+        <nav class="mt-10 space-y-4 hidden md:block">
           <a href="#about"
             class="block border-l-2 pl-4 text-slate-500 nav-link border-transparent text-lg transform scale-90 hover:scale-100 hover:text-slate-300 transition duration-200">ABOUT</a>
           <a href="#experience"
@@ -83,16 +83,16 @@
       <div>
 
 
-        <footer class="hidden md:block text-sm font-extralight text-slate-500">This website was highly inspired by a beautiful website of Brittany Chiang <a
-            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer"><span class="text-sky-700">brittanychiang.com</span></a></footer>
+        <footer class="hidden md:block text-sm font-extralight text-slate-300">This website was heavily inspired by the beautiful design of <a
+            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer"><span class="text-sky-700">brittanychiang.com</span></a>.</footer>
       </div>
 
     </aside>
 
 
     <!-- Main Content -->
-    <main class="w-full md:w-1/2 space-y-20 overflow-y-auto p-6 md:ps-4 md:pe-28">
-      <section id="about" class="space-y-6 first:pt-0">
+    <main class="w-full md:w-1/2 space-y-20 overflow-y-auto pb-6 px-6 md:ps-4 md:pe-28">
+      <section id="about" class="space-y-6 first:pt-10">
         <p>
           I’m a software engineer who enjoys building all kinds of stuff with C# and the .NET platform. 
         </p>
@@ -108,7 +108,20 @@
           in the code. For me, coding is a blend of problem-solving, creativity, and fun.
         </p>
 
-        <p>Check out full <a href=../public/cv.pdf class="text-blue-400">resume</a>.</p>
+         <h6 class="text-balance font-bold text-slate-100">Tech I'm using:</h4>
+          <div class="gap-2 flex flex-wrap font-light text-sky-400 text-base
+                      [&>span]:border-e-2 [&>span]:border-sky-300 [&>span]:bg-slate-900 [&>span]:pe-2 last:[&>span]:border-e-0">
+            <span>.NET</span>
+            <span>ASP.NET Core</span>
+            <span>Angular</span>
+            <span>WPF</span>
+            <span>Blazor</span>
+            <span>Unity</span>
+            <span>Bootstrap</span>
+            <span>TailwindCSS</span>
+          </div>
+
+        <p>Check out full <a href=../public/cv.pdf target="_blank" rel="noopener noreferrer" class="text-blue-400">resume</a>.</p>
         
         </section>
         
@@ -198,8 +211,8 @@
   <script src="../public/info/projects.js"></script>
   <script src="../src/scripts/fetchdata.js"></script>
 
-  <footer class="block md:hidden text-sm text-center font-extralight px-3">This website was highly inspired by a beautiful website of Brittany Chiang <a
-            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer" style="color: blue">brittanychiang.com</a></footer>
+  <footer class="block md:hidden text-slate-300 text-sm text-center font-extralight px-3">This website was heavily inspired by the beautiful design of <a
+            href="https://brittanychiang.com" title="Brittany Chiang web site" target="_blank" rel="noopener noreferrer"><span class="text-sky-700">brittanychiang.com</span></a>.</footer>
 </body>
 
 </html>
