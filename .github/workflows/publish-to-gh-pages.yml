@@ -29,11 +29,17 @@ jobs:
       - name: Create dist folder structure
         run: |
           mkdir dist
-          cp -r src/* dist/
+          cp -r src/scripts dist/scripts
           cp -r public dist/public
+          cp -r src/favicon.ico dist/favicon.ico
 
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --minify
+
+        # 5. Copy index.html & fix CSS path
+      - name: Copy HTML with fixed CSS path
+        run: |
+          sed 's|\.\./dist/styles.css|styles.css|g' src/index.html > dist/index.html
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

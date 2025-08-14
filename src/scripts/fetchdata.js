@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // actually the only width are the affected. as changing height has no effect at all. 
         // is has probably something to do with img tag but for now it look okay
-        const imgW = product.img_album_orientation == true ? "w-40" : "md:w-22 w-20";
-        const imgH = product.img_album_orientation == true ? "h-24" : "h-40";
+        const imgW = product.img_album_orientation == true ? "min-w-40 max-w-40" : "md:min-w-22 md:max-w-22 min-w-20 max-w-20";
+        const imgH = product.img_album_orientation == true ? "min-h-24 max-h-24" : "min-h-40 max-h-40";
         let html = `
             <a href="${product.link}" target="_blank">
                 <div class="flex flex-col lg:flex-row gap-3 md:p-4 py-4 rounded-md md:[&:not(:hover)]:group-hover:opacity-50
