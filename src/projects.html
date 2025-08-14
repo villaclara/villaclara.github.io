@@ -1,0 +1,79 @@
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's Volodymyr</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <!-- defer is called to wait for DOM to fully load and then download js code -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[#151515] text-slate-300 font-sans min-h-screen p-6">
+
+<p>projects</p>
+
+<div class="p-1 md:px-32">
+    <table class="w-full md:w-9/12 border-separate border-spacing-y-5">
+  <thead>
+    <tr>
+      <!-- <th></th> -->
+      <th>Title</th>
+      <th>Description</th>
+      <th>Tags</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody id="projectsDiv">
+   
+  </tbody>
+</table>
+</div>
+
+ <script src="../public/info/projects.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("projectsDiv");
+
+    window.projects.forEach(product => {
+       
+        const div = document.createElement("tr");
+        div.classList.add("border", "table-row", "md:[&:not(:hover)]:group-hover:opacity-50",
+                 "md:hover:bg-gray-800", "md:hover:blur-0", "transition", "duration-200", "transform");        
+        let html = `
+                <td class="table-cell px-2 py-2">
+                    <h3 class="text-base font-semibold text-slate-100">${product.name}</h3>
+                </td>
+                <td class="px-2">
+                    <span class="text-slate-400 text-sm text-justify">lazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.</span>
+                </td>
+                <td class="px-2">
+                    <div class="flex flex-wrap gap-2">
+            `;
+
+        product.tags.forEach(item => {
+            html += `<span class="self-center text-sky-400 bg-slate-900 text-sm font-semibold border-1 border-sky-300 rounded-full px-2">${item}</span>`
+        });
+
+        html += `       </div>
+                    </td>
+                </div>
+            </div>
+            <td class="p-2"> 
+                <a href="${product.link}" target="_blank">GitHub</a>
+                <br/>
+                <a href="${product.link}" target="_blank">GitHub</a>
+            </td>
+            `;
+        div.innerHTML = html;
+        container.appendChild(div);
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+// compiles tailwind each save
+npx tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --watch
