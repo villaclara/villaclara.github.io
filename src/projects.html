@@ -15,65 +15,66 @@
 </head>
 
 <body class="bg-[#151515] text-slate-300 font-sans min-h-screen p-6">
+    <div class="items-center flex flex-col md:flex-row justify-between">
+        <div class="">
+            <a href="javascript:history.back()" class="flex items-center hover:text-blue-400 hover:scale-105 transition duration-100">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.68473 7.33186C8.07526 6.94134 8.07526 6.30817 7.68473 5.91765C7.29421 5.52712 6.66105 5.52712 6.27052 5.91765L1.60492 10.5832C0.823873 11.3643 0.823872 12.6306 1.60492 13.4117L6.27336 18.0801C6.66388 18.4706 7.29705 18.4706 7.68757 18.0801C8.0781 17.6896 8.0781 17.0564 7.68757 16.6659L4.02154 12.9998L22 12.9998C22.5523 12.9998 23 12.5521 23 11.9998C23 11.4476 22.5523 10.9998 22 10.9998L4.01675 10.9998L7.68473 7.33186Z" fill="currentColor"></path> </g>
+                </svg>
+                <span class="inline-block">&nbsp;Return back</span>
+            </a>
+        </div>
+        <h3 class="text-2xl text-slate-100 font-semibold flex-1 text-center">My projects:</h3>
+    </div>
 
-<p>projects</p>
+    <div class="p-1 md:px-10">
+        <div id="projectsDiv" class="md:grid md:grid-cols-2 space-y-2">
 
-<div class="p-1 md:px-32">
-    <table class="w-full md:w-9/12 border-separate border-spacing-y-5">
-  <thead>
-    <tr>
-      <!-- <th></th> -->
-      <th>Title</th>
-      <th>Description</th>
-      <th>Tags</th>
-      <th>Links</th>
-    </tr>
-  </thead>
-  <tbody id="projectsDiv">
-   
-  </tbody>
-</table>
-</div>
+        </div>
+    </div>
 
- <script src="../public/info/projects.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const container = document.getElementById("projectsDiv");
+    <script src="../public/info/projects.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("projectsDiv");
 
-    window.projects.forEach(product => {
-       
-        const div = document.createElement("tr");
-        div.classList.add("border", "table-row", "md:[&:not(:hover)]:group-hover:opacity-50",
-                 "md:hover:bg-gray-800", "md:hover:blur-0", "transition", "duration-200", "transform");        
-        let html = `
-                <td class="table-cell px-2 py-2">
+            window.projects.slice().reverse().forEach(product => {
+
+                const div = document.createElement("div");
+
+                div.classList.add("lg:mx-4", "md:h-full");
+                // actually the only width are the affected. as changing height has no effect at all. 
+                // is has probably something to do with img tag but for now it look okay
+                const imgW = product.img_album_orientation == true ? "min-w-40 max-w-40" : "md:min-w-22 md:max-w-22 min-w-20 max-w-20";
+                const imgH = product.img_album_orientation == true ? "min-h-24 max-h-24" : "min-h-40 max-h-40";
+                let html = `
+            <a href="${product.link}" target="_blank" class="md:h-full md:block md:w-full">
+                <div class="md:h-full flex flex-col lg:flex-row gap-3 md:p-4 py-4 rounded-md md:[&:not(:hover)]:group-hover:opacity-50
+                 md:hover:bg-gray-800 md:hover:blur-0 md:scale-95 md:hover:scale-100 transition duration-200 transform">
+                <div class="flex items-center">
+                    <img src="${product.image}" class="${imgW} ${imgH} flex-shrink-0" />
+                </div>
+                <div class="space-y-3">
                     <h3 class="text-base font-semibold text-slate-100">${product.name}</h3>
-                </td>
-                <td class="px-2">
-                    <span class="text-slate-400 text-sm text-justify">lazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.</span>
-                </td>
-                <td class="px-2">
+                    <p class="text-slate-400 text-sm text-justify">${product.description}</p>
                     <div class="flex flex-wrap gap-2">
             `;
 
-        product.tags.forEach(item => {
-            html += `<span class="self-center text-sky-400 bg-slate-900 text-sm font-semibold border-1 border-sky-300 rounded-full px-2">${item}</span>`
+                product.tags.forEach(item => {
+                    html += `<span class="self-center text-sky-400 bg-slate-900 text-sm font-semibold border-1 border-sky-300 rounded-full px-2">${item}</span>`
+                });
+
+                html += `</div>
+                    </div>
+                </div>
+            </a>
+            `;
+                div.innerHTML = html;
+                container.appendChild(div);
+            });
         });
 
-        html += `       </div>
-                    </td>
-                </div>
-            </div>
-            <td class="p-2"> 
-                <a href="${product.link}" target="_blank">GitHub</a>
-                <br/>
-                <a href="${product.link}" target="_blank">GitHub</a>
-            </td>
-            `;
-        div.innerHTML = html;
-        container.appendChild(div);
-    });
-});
-</script>
+    </script>
 </body>
+
 </html>
