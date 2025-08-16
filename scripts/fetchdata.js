@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("projectsDiv");
 
     window.projects.forEach(product => {
+        // skip projects which should not be displayed in front page.
+        if (!product.displayInMain)
+        {
+            return;
+        }
         const div = document.createElement("div");
 
         // actually the only width are the affected. as changing height has no effect at all. 
