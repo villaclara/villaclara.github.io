@@ -29,28 +29,10 @@ window.projects = [
     {
         displayInMain: false,
         name: "Bridges Unity WebGL Game",
-        description: "Developed a Unity WebGL game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by Unity Relay. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions. By combining efficient game logic with WebGL deployment, the game remains lightweight, portable, and accessible across platforms."
+        description: "Developed a Unity WebGL cross-platform game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by <span class='font-bold'>Unity Relay</span>. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions.",
         tags: [ "C#", "Unity", "Unity Relay" ],
-        link: "https://github.com/villaclara/bridges",
-        image: "../public/images/r23_admin_app.png",
-        img_album_orientation: false
-    },
-    {
-        displayInMain: false,
-        name: "Bridges Unity WebGL Game",
-        description: "Developed a web app for my wife small candle shop to manage products/orders. Features include adding/removing candles, tracking orders, a simple to-do list with full history, and an expense tracker. <br/> Blazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.",
-        tags: [ "ASP.NET Core", "Blazor", "PWA" ],
-        link: "https://github.com/villaclara/r23-admin-app",
-        image: "../public/images/r23_admin_app.png",
-        img_album_orientation: false
-    },
-    {
-        displayInMain: false,
-        name: "Bridges Unity WebGL Game",
-        description: "Developed a web app for my wife small candle shop to manage products/orders. Features include adding/removing candles, tracking orders, a simple to-do list with full history, and an expense tracker. <br/> Blazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.",
-        tags: [ "ASP.NET Core", "Blazor", "PWA" ],
-        link: "https://github.com/villaclara/r23-admin-app",
-        image: "../public/images/r23_admin_app.png",
+        link: "https://github.com/villaclara/Bridges",
+        image: "../public/images/bridges.png",
         img_album_orientation: false
     }
 ]
