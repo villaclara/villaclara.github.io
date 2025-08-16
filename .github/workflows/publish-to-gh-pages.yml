@@ -41,6 +41,7 @@ jobs:
       - name: Copy HTML with fixed CSS path
         run: |
           sed 's|\.\./dist/styles.css|styles.css|g' src/index.html > dist/index.html
+          sed 's|\.\./dist/styles.css|styles.css|g' src/projects.html > dist/projects.html
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
