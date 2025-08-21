@@ -32,6 +32,7 @@ jobs:
           cp -r src/scripts dist/scripts
           cp -r public dist/public
           cp -r src/favicon.ico dist/favicon.ico
+          cp -r src/projects.html dist/projects.html
 
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --minify
@@ -40,6 +41,7 @@ jobs:
       - name: Copy HTML with fixed CSS path
         run: |
           sed 's|\.\./dist/styles.css|styles.css|g' src/index.html > dist/index.html
+          sed 's|\.\./dist/styles.css|styles.css|g' src/projects.html > dist/projects.html
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
