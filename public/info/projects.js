@@ -29,7 +29,7 @@ window.projects = [
     {
         displayInMain: false,
         name: "Bridges Unity WebGL Game",
-        description: "Developed a Unity WebGL cross-platform game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by <span class='font-bold'>Unity Relay</span>. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions.",
+        description: "Developed with brother a Unity WebGL cross-platform game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by <span class='font-bold'>Unity Relay</span>. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions.",
         tags: [ "C#", "Unity", "Unity Relay" ],
         link: "https://github.com/villaclara/Bridges",
         image: "../public/images/bridges.png",
