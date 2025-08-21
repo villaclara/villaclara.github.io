@@ -1,5 +1,14 @@
 window.projects = [
     {
+        displayInMain: false,
+        name: "GooseRunner",
+        description: "Endless runner developed in Unity with C# together with my brother and features a codebase using object-oriented patterns and object pooling for optimized performance on mobile hardware. All visuals were hand-drawn, giving the game a unique and polished design.",
+        tags: [ "Unity", "C#", "Mobile" ],
+        link: "https://github.com/villaclara/GooseRunner",
+        image: "../public/images/goose_runner.png",
+        img_album_orientation: false,
+    },
+    {
         displayInMain: true,
         name: "ATA Reborn Windows App",
         description: "Built a desktop app that tracks how long Windows processes run in real time. It shows active time for the current session, today’s total, and all-time usage, with a chart for a visual overview. Features a clean or minimal layout plus handy QoL settings.<br/> Used WPF framework, designed with MVVM pattern. App is available as an easy-to-install .msix package for Windows.",
