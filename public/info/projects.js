@@ -30,7 +30,7 @@ window.projects = [
         displayInMain: true,
         name: "Road23 Admin Web App",
         description: "Developed a web app for my wife small candle shop to manage products/orders. Features include adding/removing candles, tracking orders, a simple to-do list with full history, and an expense tracker. <br/> Blazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.",
-        tags: [ "ASP.NET Core", "Blazor", "PWA" ],
+        tags: [ "ASP.NET Core", "Blazor", "WASM", "PWA" ],
         link: "https://github.com/villaclara/r23-admin-app",
         image: "../public/images/r23_admin_app.png",
         img_album_orientation: false
@@ -39,7 +39,7 @@ window.projects = [
         displayInMain: false,
         name: "Bridges Unity WebGL Game",
         description: "Developed with brother a Unity WebGL cross-platform game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by <span class='font-bold'>Unity Relay</span>. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions.",
-        tags: [ "C#", "Unity", "Unity Relay" ],
+        tags: [ "C#", "Unity", "Unity Relay", "WebGL" ],
         link: "https://github.com/villaclara/Bridges",
         image: "../public/images/bridges.png",
         img_album_orientation: false
