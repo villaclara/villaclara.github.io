@@ -43,5 +43,14 @@ window.projects = [
         link: "https://github.com/villaclara/Bridges",
         image: "../public/images/bridges.png",
         img_album_orientation: false
+    },
+    {
+        displayInMain: true,
+        name: "Todo Web App",
+        description: "Developed my version of classic todo application as a web app. <span class='font-bold'>Key features:</span> Add and manage access to your todolists, manage todotasks, assign tasks to other users.<br/> Controller-based WEb Api Backend following RESTful priciples secured by bearer authentication to prevent unathorized access. Traditional ASP.NET Core Model-View-Controller as frontend with Identity Api with modern dark-themed mobile-first UI.",
+        tags: [ "ASP.NET Core", "WebApi", "MVC", "Identity Api", "Bootstrap" ],
+        link: "https://github.com/villaclara/todo-app",
+        image: "../public/images/todo-app.png",
+        img_album_orientation: false
     }
 ]
