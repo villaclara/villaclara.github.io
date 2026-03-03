@@ -1,11 +1,29 @@
 window.projects = [
     {
-        displayInMain: false,
-        name: "GooseRunner",
-        description: "Endless runner developed in Unity with C# together with my brother and features a codebase using object-oriented patterns and object pooling for optimized performance on mobile hardware. All visuals were hand-drawn, giving the game a unique and polished design.",
-        tags: [ "Unity", "C#", "Mobile" ],
-        link: "https://github.com/villaclara/GooseRunner",
-        image: "../public/images/goose_runner.png",
+        displayInMain: true,
+        name: "My bad",
+        description: "Ongoing development with my brother of cool tool for players of Dota2. <span class='font-bold'>Key features:</span> Get hero pick suggestions based on allies and enemies picks. Check your ward map and review wards placed efficiency.<br/>Minimal Api Backend following RESTful priciples. Angular as frontend with using Tailwidcss styling with mobile-first design. Postgres database alongside EF Core ORM.",
+        tags: [ "ASP.NET Core", "WebApi", "Angular", "Dota2" ],
+        link: "https://mybad.top",
+        image: "../public/images/mybad.png",
+        img_album_orientation: true
+    },
+    {
+        displayInMain: true,
+        name: "Todo Web App",
+        description: "Developed my version of classic todo application as a web app. <span class='font-bold'>Key features:</span> Add and manage access to your todolists, manage todotasks, assign tasks to other users.<br/> Controller-based WEb Api Backend following RESTful priciples secured by bearer authentication to prevent unathorized access. Traditional ASP.NET Core Model-View-Controller as frontend with Identity Api with modern dark-themed mobile-first UI.",
+        tags: [ "ASP.NET Core", "WebApi", "MVC", "Identity Api", "Bootstrap" ],
+        link: "https://github.com/villaclara/todo-app",
+        image: "../public/images/todo-app.png",
+        img_album_orientation: false
+    },
+    {
+        displayInMain: true,
+        name: "BabyEST Web App",
+        description: "Developed a web app for parents to track their toddler’s sleep and eating schedules, with options to add/edit entries, filter and view history, and see average times. <span class='font-bold'>Key feature:</span> invite another parent to share and update the child’s records from their own account. <br/> Angular frontend with .NET Minimal Api backend. Designe UI for phones with Bootstrap + CSS, installable as PWA application. Light/dark themes available.",
+        tags: [ "ASP.NET Core", "Angular", "WebApi", "PWA" ],
+        link: "https://github.com/villaclara/baby-est",
+        image: "../public/images/baby_est.png",
         img_album_orientation: false,
     },
     {
@@ -19,24 +37,6 @@ window.projects = [
     },
     {
         displayInMain: true,
-        name: "BabyEST Web App",
-        description: "Developed a web app for parents to track their toddler’s sleep and eating schedules, with options to add/edit entries, filter and view history, and see average times. <span class='font-bold'>Key feature:</span> invite another parent to share and update the child’s records from their own account. <br/> Angular frontend with .NET Minimal Api backend. Designe UI for phones with Bootstrap + CSS, installable as PWA application. Light/dark themes available.",
-        tags: [ "ASP.NET Core", "Angular", "WebApi", "PWA" ],
-        link: "https://github.com/villaclara/baby-est",
-        image: "../public/images/baby_est.png",
-        img_album_orientation: false,
-    },
-    {
-        displayInMain: true,
-        name: "Road23 Admin Web App",
-        description: "Developed a web app for my wife small candle shop to manage products/orders. Features include adding/removing candles, tracking orders, a simple to-do list with full history, and an expense tracker. <br/> Blazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.",
-        tags: [ "ASP.NET Core", "Blazor", "WASM", "PWA" ],
-        link: "https://github.com/villaclara/r23-admin-app",
-        image: "../public/images/r23_admin_app.png",
-        img_album_orientation: false
-    },
-    {
-        displayInMain: false,
         name: "Bridges Unity WebGL Game",
         description: "Developed with brother a Unity WebGL cross-platform game playable directly in the browser on any device. It supports both local and online multiplayer, with networking powered by <span class='font-bold'>Unity Relay</span>. To ensure fair gameplay, the game dynamically synchronizes the screen size to match the host player during multiplayer sessions.",
         tags: [ "C#", "Unity", "Unity Relay", "WebGL" ],
@@ -45,12 +45,21 @@ window.projects = [
         img_album_orientation: false
     },
     {
-        displayInMain: true,
-        name: "Todo Web App",
-        description: "Developed my version of classic todo application as a web app. <span class='font-bold'>Key features:</span> Add and manage access to your todolists, manage todotasks, assign tasks to other users.<br/> Controller-based WEb Api Backend following RESTful priciples secured by bearer authentication to prevent unathorized access. Traditional ASP.NET Core Model-View-Controller as frontend with Identity Api with modern dark-themed mobile-first UI.",
-        tags: [ "ASP.NET Core", "WebApi", "MVC", "Identity Api", "Bootstrap" ],
-        link: "https://github.com/villaclara/todo-app",
-        image: "../public/images/todo-app.png",
+        displayInMain: false,
+        name: "GooseRunner",
+        description: "Endless runner developed in Unity with C# together with my brother and features a codebase using object-oriented patterns and object pooling for optimized performance on mobile hardware. All visuals were hand-drawn, giving the game a unique and polished design.",
+        tags: [ "Unity", "C#", "Mobile" ],
+        link: "https://github.com/villaclara/GooseRunner",
+        image: "../public/images/goose_runner.png",
+        img_album_orientation: false,
+    },
+    {
+        displayInMain: false,
+        name: "Road23 Admin Web App",
+        description: "Developed a web app for my wife small candle shop to manage products/orders. Features include adding/removing candles, tracking orders, a simple to-do list with full history, and an expense tracker. <br/> Blazor WASM frontend with a .NET Controller-based Web API backend using the Repository pattern. Mobile-first UI built with Bootstrap and CSS, installable as a PWA.",
+        tags: [ "ASP.NET Core", "Blazor", "WASM", "PWA" ],
+        link: "https://github.com/villaclara/r23-admin-app",
+        image: "../public/images/r23_admin_app.png",
         img_album_orientation: false
     }
 ]
